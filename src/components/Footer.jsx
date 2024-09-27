@@ -1,12 +1,14 @@
-// import './Footer.css';
+import React from 'react';
 
 const Footer = () => {
   return (
-    <footer>
-      <p>Follow us on:</p>
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <footer style={{ backgroundColor: '#000', color: 'white', padding: '20px', textAlign: 'center' }}>
+      <p>&copy; 2024 A.P Tech Hub</p>
+      <p>
+        <a href="#" style={{ color: '#1e90ff' }}>GitHub</a> |
+        <a href="#" style={{ color: '#1e90ff' }}> Instagram</a> |
+        <a href="#" style={{ color: '#1e90ff' }}> LinkedIn</a>
+      </p>
     </footer>
   );
 };
