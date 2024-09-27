@@ -26,6 +26,16 @@ button {
   cursor: pointer;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #1e90ff;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .products {
   display: flex;
   flex-direction: column;
@@ -40,29 +50,29 @@ button {
 }
 
 .product-card {
-  background-color: white; 
+  background-color: white;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
-  margin: 15px; 
-  width: 250px; 
+  margin: 15px;
+  width: 250px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s; 
+  transition: transform 0.2s;
 }
 
 .product-card:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .product-card img {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   margin-bottom: 15px;
 }
 
 .product-card h3 {
-  color: #1e90ff; 
+  color: #1e90ff;
   margin-bottom: 10px;
 }
 
@@ -73,8 +83,8 @@ button {
 }
 
 .product-card button {
-  background-color: #1e90ff; 
-  color: white; 
+  background-color: #1e90ff;
+  color: white;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
@@ -84,4 +94,9 @@ button {
 
 .product-card button:hover {
   background-color: #0c78d0;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
 }
