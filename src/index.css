@@ -19,7 +19,7 @@ body {
 /* Header styling */
 header {
   background-color: #1e90ff;
-  color: white;
+  padding: 10px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -27,34 +27,51 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
+/* Title styling */
 header h1 {
-  font-size: 1.6em;
-  font-weight: bold;
+  margin-left: 20px;
+  font-size: 1.5em;
+  color: white;
+  font-weight: lighter;
 }
 
+/* Navigation styling */
 nav ul {
   display: flex;
-  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  list-style: none;
+  margin: 0 10px; 
 }
 
 nav ul li a {
-  color: white;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #fff;
+  color: #1e90ff;
+  text-transform: lowercase; 
   font-size: 1em;
-  text-transform: lowercase;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  border-radius: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  cursor: pointer; 
+}
+
+nav ul li a:focus {
+  outline: none; 
 }
 
 nav ul li a:hover {
-  color: #fff9e6;
+  background-color: gold;
+  transform: translateY(-2px);
 }
+
 
 /* Section Styling */
 section {
@@ -75,7 +92,7 @@ section h2 {
 
 #hero {
   padding: 200px 20px;
-  background: url('https://www.theforage.com/blog/wp-content/uploads/2022/09/tech-companies.jpg') no-repeat center center/cover;
+  background: url('https://cdn.niceboard.co/boards/salestrax/blog/image-2-jP7E1Au.png') no-repeat center center/cover;
   color: #fff;
   text-align: center;
   margin-top: 100px;
@@ -84,6 +101,8 @@ section h2 {
   justify-content: center;
   align-items: center;
   min-height: 80vh;
+  border: 100%;
+  border-radius: 30px;
 }
 
 .hero-content {
@@ -125,6 +144,7 @@ section h2 {
   grid-template-columns: repeat(4, 1fr); 
   gap: 20px; 
   margin-top: 40px;
+  border-radius: 50px;
 }
 
 .product-card {
