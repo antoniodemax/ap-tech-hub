@@ -1,0 +1,30 @@
+.contact {
+    background-color: #f4f4f4; 
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    color: #1e90ff; 
+    margin-bottom: 20px;
+  }
+  
+  .contact button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+  }
+  
+  .contact button:hover {
+    background-color: #0c78d0;
+  }
+  
+  .contact h3 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
