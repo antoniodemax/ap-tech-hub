@@ -90,52 +90,76 @@ section h2 {
   font-weight: bold;
 }
 
-#hero {
-  padding: 200px 20px;
-  background: url('https://images.unsplash.com/photo-1558427405-d8dcc49ae7c2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlnaHQlMjBibHVlfGVufDB8fDB8fHww') no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  margin-top: 100px;
+/* Hero Section Styles */
+.hero-section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-height: 80vh;
-  border: 100%;
-  border-radius: 30px;
+  justify-content: center;
+  height: 90vh;
+  background-image: url('https://img.freepik.com/premium-photo/eshopping-blue-background-ecommerce-illustration_1036975-206490.jpg?w=996');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 70px;
+  margin-top: 80px;
 }
 
 .hero-content {
-  padding: 20px;
-  border-radius: 10px; 
-  background-color: transparent;
-}
-
-#hero h1 {
-  font-size: 3.5em;
-  margin-bottom: 20px;
-}
-
-#hero p {
-  font-size: 1.5em;
-  margin-bottom: 30px;
-}
-
-#hero button {
-  padding: 15px 30px;
-  font-size: 1.3em;
-  background-color: gold;
+  text-align: center;
   color: white;
+  padding: 20px;
+  z-index: 1;
+}
+
+/* Headings and Paragraphs */
+.hero-heading {
+  font-size: 3rem;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif; 
+  margin-bottom: 10px;
+}
+
+.hero-paragraph {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Button Styles */
+.hero-button {
+  background-color: gold;
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-#hero button:hover {
-  background-color: #d4af37; 
+.hero-button:hover {
+  background-color: red;
+  transform: scale(1.05);
 }
 
+/* Roll-in Animation */
+@keyframes rollIn {
+  0% {
+    transform: translateX(-100%) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+/* Apply the roll-in animation to hero content */
+.hero-content {
+  animation: rollIn 6s ease-in forwards; 
+  animation-iteration-count: 2; 
+}
 
 
 /* Products Section */
