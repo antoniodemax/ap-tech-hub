@@ -18,6 +18,18 @@ const Testimonials = () => {
             "The team at A.P Tech Hub really knows their stuff. They helped me choose the right accessories for my devices. I'll definitely be back!"
             <footer style={{ marginTop: '10px', fontWeight: 'bold', color: '#1e90ff' }}>— Jessica Lee, Business Owner</footer>
           </blockquote>
+          <blockquote style={{ fontStyle: 'italic', color: '#555', margin: '10px 0' }}>
+            "Fast shipping and excellent customer support. I couldn't be happier with my purchase from A.P Tech Hub!"
+            <footer style={{ marginTop: '10px', fontWeight: 'bold', color: '#1e90ff' }}>— David Smith, IT Consultant</footer>
+          </blockquote>
+          <blockquote style={{ fontStyle: 'italic', color: '#555', margin: '10px 0' }}>
+            "A great selection of the latest tech gadgets. A.P Tech Hub is now my go-to for all things tech!"
+            <footer style={{ marginTop: '10px', fontWeight: 'bold', color: '#1e90ff' }}>— Emma Williams, Digital Marketer</footer>
+          </blockquote>
+          <blockquote style={{ fontStyle: 'italic', color: '#555', margin: '10px 0' }}>
+            "I love the user-friendly website and how easy it is to find what I need. Highly recommend!"
+            <footer style={{ marginTop: '10px', fontWeight: 'bold', color: '#1e90ff' }}>— John Brown, Entrepreneur</footer>
+          </blockquote>
         </div>
       </div>
     </section>
