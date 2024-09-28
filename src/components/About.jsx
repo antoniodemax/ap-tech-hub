@@ -2,11 +2,29 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" style={{ padding: '40px 20px', backgroundColor: '#f9f9f9', margin: '20px auto', maxWidth: '1200px', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
-      <div style={{ padding: '20px', backgroundColor: '#fff', borderRadius: '10px' }}>
+    <section
+      id="about"
+      style={{
+        padding: '40px 20px',
+        margin: '20px auto',
+        maxWidth: '1200px',
+        borderRadius: '10px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        backgroundImage: `url('https://www.pciicp.com/wp-content/uploads/2022/02/Exclusive-Benefits-Of-Working-In-Tech.jpg')`, 
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div
+        style={{
+          padding: '20px',
+          borderRadius: '10px',
+          backgroundColor: 'rgba(255, 255, 255, 0.8)', 
+        }}
+      >
         <h2 style={{ color: '#1e90ff' }}>About Us</h2>
         <p style={{ color: '#333' }}>
-          Welcome to A.P Tech Hub, your trusted partner in the world of technology. Founded in 2024 by [Anthony Peter .O. Onyango], a passionate tech enthusiast with over a decade of experience in the industry, A.P Tech Hub aims to bridge the gap between cutting-edge technology and our valued customers.
+          Welcome to A.P Tech Hub, your trusted partner in the world of technology. Founded in 2024 by Anthony Peter .O. Onyango, a passionate tech enthusiast with over a decade of experience in the industry, A.P Tech Hub aims to bridge the gap between cutting-edge technology and our valued customers.
         </p>
         <p style={{ color: '#333' }}>
           At A.P Tech Hub, we believe that technology should be accessible to everyone. Our mission is to provide high-quality tech products, ranging from laptops and smartphones to accessories, all at competitive prices. We carefully curate our selection to ensure that each product meets our strict standards for performance, reliability, and value.
