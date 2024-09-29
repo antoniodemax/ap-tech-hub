@@ -11,7 +11,7 @@ const Contact = () => {
                         For inquiries, please reach out to us at:
                     </p>
                     <p className="contact-email">Email: support@aptechhub.com</p>
-                    <p className="contact-phone">Phone: (123) 456-7890</p>
+                    <p className="contact-phone">Phone: +254722901187</p>
                 </div>
 
                 <h3 className="login-title">Login to Your Account</h3>
