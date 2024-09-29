@@ -1,15 +1,87 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
-  return (
-    <section id="contact" style={{ padding: '40px 20px', backgroundColor: '#f9f9f9', margin: '20px auto', maxWidth: '1200px', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
-      <div style={{ backgroundColor: '#fff', borderRadius: '10px', padding: '20px', textAlign: 'center' }}>
-        <h2 style={{ color: '#1e90ff' }}>Contact Us</h2>
-        <button style={{ margin: '10px', backgroundColor: '#1e90ff', color: 'white', border: 'none', padding: '10px 15px', borderRadius: '5px' }}>Sign In</button>
-        <button style={{ margin: '10px', backgroundColor: '#1e90ff', color: 'white', border: 'none', padding: '10px 15px', borderRadius: '5px' }}>Logout</button>
-      </div>
-    </section>
-  );
+    return (
+        <section id="contact" className="contact-section">
+            <div className="contact-container">
+                <h2 className="contact-title">Contact Us</h2>
+                
+                <div className="contact-info">
+                    <p className="contact-description">
+                        For inquiries, please reach out to us at:
+                    </p>
+                    <p className="contact-email">Email: support@aptechhub.com</p>
+                    <p className="contact-phone">Phone: (123) 456-7890</p>
+                </div>
+
+                <h3 className="login-title">Login to Your Account</h3>
+                
+                <LoginForm /> 
+            </div>
+        </section>
+    );
+};
+
+
+const LoginForm = () => {
+    const [isLogin, setIsLogin] = useState(true);
+    const [showMessage, setShowMessage] = useState(false);
+    const [promptMessage, setPromptMessage] = useState("");
+
+    const toggleForm = () => {
+        setIsLogin(!isLogin);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setShowMessage(true);
+        if (isLogin) {
+            setPromptMessage("Welcome back! You're successfully logged in.");
+        } else {
+            setPromptMessage("Thank you for signing up! Your account has been created.");
+        }
+
+        
+        setTimeout(() => {
+            setShowMessage(false);
+        }, 5000);
+    };
+
+    return (
+        <section id="login" className="login-section">
+            <div className="login-card">
+                <h2>{isLogin ? "Login" : "Sign Up"}</h2>
+                <form onSubmit={handleSubmit} className="form-container">
+                    {!isLogin && (
+                        <div className="form-group">
+                            <label htmlFor="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your full name" required />
+                        </div>
+                    )}
+                    <div className="form-group">
+                        <label htmlFor="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required />
+                    </div>
+                    <button type="submit" className="submit-btn">
+                        {isLogin ? "Login" : "Sign Up"}
+                    </button>
+                    <p onClick={toggleForm} className="toggle-link">
+                        {isLogin ? "Don't have an account? Sign Up" : "Already have an account? Login"}
+                    </p>
+                </form>
+
+                {showMessage && (
+                    <div className="prompt-message">
+                        {promptMessage}
+                    </div>
+                )}
+            </div>
+        </section>
+    );
 };
 
 export default Contact;

@@ -8,7 +8,6 @@ import Products from './components/Products';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import LoginForm from './components/LoginForm'; // Importing LoginForm component
 
 const App = () => {
   return (
@@ -18,8 +17,7 @@ const App = () => {
       <About />
       <Products />
       <Testimonials />
-      <Contact />
-      <LoginForm /> {/* Adding the LoginForm under the Contact section */}
+      <Contact /> 
       <Footer />
     </Router>
   );

@@ -95,12 +95,12 @@ section h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
-  background-image: url('https://img.freepik.com/premium-photo/eshopping-blue-background-ecommerce-illustration_1036975-206490.jpg?w=996');
+  height: 100vh;
+  background-image: url(https://img.freepik.com/free-photo/full-shot-man-experiencing-virtual-reality_23-2149548139.jpg?t=st=1727623691~exp=1727627291~hmac=a221871beadf34e645b63b9fce52586f3660a5b32fadbbfeda644ec59cf11165&w=900);
   background-size: cover;
   background-position: center;
   position: relative;
-  border-radius: 70px;
+  border-radius: 40px;
   margin-top: 80px;
 }
 
@@ -129,7 +129,7 @@ section h2 {
 /* Button Styles */
 .hero-button {
   background-color: gold;
-  color: #fff;
+  color: #fffafa;
   border: none;
   border-radius: 10px;
   padding: 15px 30px;
@@ -143,23 +143,64 @@ section h2 {
   transform: scale(1.05);
 }
 
-/* Roll-in Animation */
 @keyframes rollIn {
   0% {
     transform: translateX(-100%) rotate(0deg);
     opacity: 0;
   }
   100% {
-    transform: translateX(0) rotate(360deg);
+    transform: translateX(0) rotate(0deg);
     opacity: 1;
   }
 }
 
-/* Apply the roll-in animation to hero content */
-.hero-content {
-  animation: rollIn 6s ease-in forwards; 
-  animation-iteration-count: 2; 
+@keyframes rollOut {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%) rotate(0deg);
+    opacity: 0;
+  }
 }
+
+.hero-content {
+  animation: rollIn 5s ease-in forwards, rollOut 5s ease-out forwards; 
+  animation-delay: 0s, 5s; 
+  animation-fill-mode: forwards; 
+  animation-iteration-count: 1, 1; 
+}
+
+@keyframes rollInAgain {
+  0% {
+    transform: translateX(100%) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes rollOutAgain {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+.hero-content {
+  animation: rollIn 5s ease-in forwards, rollOut 5s ease-out forwards, rollInAgain 5s ease-in forwards; 
+  animation-delay: 0s, 5s, 10s; 
+  animation-fill-mode: forwards; 
+  animation-iteration-count: 1, 1, 1; 
+}
+
 
 
 .products-section {
@@ -504,4 +545,59 @@ html {
 
 .login-section {
   position: relative; 
+}
+
+/* Contact.css */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Optional animation */
+}
+
+.contact-title {
+  color: #1e90ff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin: 20px 0;
+}
+
+.contact-description {
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-email,
+.contact-phone {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.login-title {
+  color: #1e90ff;
+  margin: 30px 0 10px;
+}
+
+/* Optional Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
