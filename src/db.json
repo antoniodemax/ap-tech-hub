@@ -24,50 +24,45 @@
         "price": 75999,
         "image": "https://s.yimg.com/ny/api/res/1.2/H22.SxBxOh1OFJQT8wzqgQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://s.yimg.com/os/creatr-uploaded-images/2024-04/aeca6eb0-f2a2-11ee-bdef-658f86b42c6d"
       },
+      
       {
         "id": 5,
-        "name": "Laptop",
-        "price": 65000,
-        "image": "https://helios-i.mashable.com/imagery/reviews/05b68fuxakHZTuCxVIQVNlO/hero-image.fill.size_1200x1200.v1623373616.jpg"
-      },
-      {
-        "id": 6,
         "name": "Cable",
         "price": 30000,
         "image": "https://www.cmwltd.co.uk/images/product/l/FOS2012MLTPE-MD-250UM-G657A1-1.png?t=1680743098"
       },
       {
-        "id": 7,
+        "id": 6,
         "name": "Laptop",
         "price": 90000,
         "image": "https://mombasacomputers.b-cdn.net/wp-content/uploads/2024/03/Dell-Latitude-5520-Business-Laptop-Intel-Core-i7-11th-Gen-16GB-RAM-512GB-SSD-15.6-Inch-FHD-Display-8.jpg"
       },
       {
-        "id": 8,
+        "id": 7,
         "name": "Phone",
         "price": 80000,
         "image": "https://phonesstorekenya.com/wp-content/uploads/2022/06/Samsung-Galaxy-A24-b.jpg"
       },
       {
-        "id": 9,
+        "id": 8,
         "name": "Cable",
         "price": 19000,
         "image": "https://canlink.co.zw/wp-content/uploads/2023/10/fiber-optic-cable-500x500-1.webp"
       },
       {
-        "id": 10,
+        "id": 9,
         "name": "Laptop",
         "price": 99900,
         "image": "https://consumer.huawei.com/content/dam/huawei-cbg-site/latam/mx/mkt/plp/new/laptops-new/matebook-x-series/matebook-x-pro-ultra-premium-edition-card-1.jpg"
       },
       {
-        "id": 11,
+        "id": 10,
         "name": "Phone",
         "price": 79900,
         "image": "https://cdn.prod.website-files.com/60efd1ce3ab711f07b596e2e/6361335451017e2a364becd6_blog-img.jpeg"
       },
       {
-        "id": 12,
+        "id": 11,
         "name": "Cable",
         "price": 10009,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKzHiziPEKDZZPfjLo_mEYbLX_4oPt_giCpQ&s"
