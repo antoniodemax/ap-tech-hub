@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #fffafa;
   color: #333;
   line-height: 1.6;
 }
@@ -104,18 +104,30 @@ section h2 {
   background-size: cover;
   background-position: center;
   position: relative;
-  border-radius: 40px;
   margin-top: 80px;
   width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
+  border-radius: 0; /* No border radius */
+}
+
+/* Adjusting the background color to black */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 0;
 }
 
 .hero-content {
   text-align: center;
   color: white;
   padding: 20px;
-  z-index: 1;
+  z-index: 1; /* Ensures content is above the overlay */
 }
 
 /* Headings and Paragraphs */
@@ -135,10 +147,10 @@ section h2 {
 
 /* Button Styles */
 .hero-button {
-  background-color: gold;
+  background-color: orange; /* Updated to orange */
   color: #fffafa;
   border: none;
-  border-radius: 10px;
+  border-radius: 10px; /* Keep the button slightly rounded or set to 0 for no rounding */
   padding: 15px 30px;
   font-size: 1rem;
   cursor: pointer;
@@ -146,7 +158,6 @@ section h2 {
 }
 
 .hero-button:hover {
-  /* background-color: red; */
   transform: scale(1.05);
 }
 
