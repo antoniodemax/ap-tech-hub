@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaShoppingCart } from 'react-icons/fa'; 
+import { FaShoppingCart } from 'react-icons/fa';
 
 const Products = () => {
   const [cart, setCart] = useState([]);
@@ -92,12 +92,10 @@ const Products = () => {
 
   const handleCheckout = () => {
     console.log("Proceeding to checkout...");
-    // Implement your checkout logic here
   };
 
   const handleBuyNow = (product) => {
     console.log(`Buying product with ID: ${product.id}`);
-    // Implement your buy logic here
   };
 
   return (
