@@ -3,21 +3,22 @@ import { FaShoppingCart } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = ({ cart = [] }) => {
-  const location = useLocation(); 
+  const location = useLocation();
 
   const headerStyle = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '1rem',
-    backgroundColor: 'white', 
+    backgroundColor: 'white',
     color: '#007BFF',
-    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', 
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
   };
 
   const titleStyle = {
     fontSize: '1.5rem',
     fontWeight: 'bold',
+    cursor: 'pointer', 
   };
 
   const navListStyle = {
@@ -29,13 +30,12 @@ const Header = ({ cart = [] }) => {
   const linkStyle = {
     color: '#007BFF',
     textDecoration: 'none',
-    padding: '0.5rem', 
-    transition: 'border-bottom 0.3s ease', 
+    padding: '0.5rem',
+    transition: 'border-bottom 0.3s ease',
   };
 
   const activeLinkStyle = {
-    borderBottom: '2px solid #007BFF', 
-
+    borderBottom: '2px solid #007BFF',
   };
 
   const cartIconStyle = {
@@ -55,7 +55,9 @@ const Header = ({ cart = [] }) => {
 
   return (
     <header style={headerStyle}>
-      <div style={titleStyle}>A.P Tech Hub</div>
+      <Link to="/" style={titleStyle}>
+        A.P Tech Hub
+      </Link>
       <nav>
         <ul style={navListStyle}>
           <li>

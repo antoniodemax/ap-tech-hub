@@ -100,65 +100,57 @@ section h2 {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url(https://img.freepik.com/free-photo/full-shot-man-experiencing-virtual-reality_23-2149548139.jpg?t=st=1727623691~exp=1727627291~hmac=a221871beadf34e645b63b9fce52586f3660a5b32fadbbfeda644ec59cf11165&w=900);
+  background-image: url('https://img.freepik.com/free-vector/infinite-space-background_1217-1186.jpg?t=st=1727949340~exp=1727952940~hmac=c05869c843ab9e277d84a3e3b3ea8e887a2718dabfc0acebe29cc1454ec8c094&w=996');
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-top: 80px;
-  width: 100%;
+  color: white;
+  text-align: center;
   padding: 0 20px;
-  box-sizing: border-box;
-  border-radius: 0; /* No border radius */
+  overflow: hidden; 
+  border-radius: 50px;
+  margin-top: 80px;
 }
 
-/* Adjusting the background color to black */
-.hero-section::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  z-index: 0;
-}
 
 .hero-content {
-  text-align: center;
-  color: white;
+  position: relative;
+  z-index: 2; /* Ensure content is above overlay */
+  max-width: 800px; /* Limit the width for better readability */
   padding: 20px;
-  z-index: 1; /* Ensures content is above the overlay */
 }
 
 /* Headings and Paragraphs */
 .hero-heading {
-  font-size: 3rem;
-  color: #fff;
-  font-family: 'Orbitron', sans-serif; 
-  margin-bottom: 10px;
+  font-size: 4rem; /* Increased font size for impact */
+  margin-bottom: 20px;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8); /* Strong text shadow for depth */
+  animation: fadeIn 1s ease-in; /* Fade-in effect */
 }
 
 .hero-paragraph {
-  font-size: 1.2rem;
-  color: #fff;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
   font-family: 'Roboto', sans-serif;
+  animation: fadeIn 1.5s ease-in; 
 }
 
 /* Button Styles */
 .hero-button {
-  background-color: orange; /* Updated to orange */
-  color: #fffafa;
+  background: gold;
+  color: #f9f9f9;
   border: none;
-  border-radius: 10px; /* Keep the button slightly rounded or set to 0 for no rounding */
+  border-radius: 5px; 
   padding: 15px 30px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease; 
 }
 
 .hero-button:hover {
-  transform: scale(1.05);
+  background: red;
+  transform: scale(1.05); 
 }
 
 @keyframes rollIn {

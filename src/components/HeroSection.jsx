@@ -8,7 +8,7 @@ const HeroSection = () => {
 
   return (
     <section id="hero" className="hero-section">
-      <div className="hero-content rotate-in">
+      <div className="hero-content">
         <h1 className="hero-heading">Welcome to A.P Tech Hub</h1>
         <p className="hero-paragraph">Your one-stop shop for tech products</p>
         <button className="hero-button" onClick={handleGetStarted}>
