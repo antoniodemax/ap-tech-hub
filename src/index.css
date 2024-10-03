@@ -115,18 +115,18 @@ section h2 {
 
 .hero-content {
   position: relative;
-  z-index: 2; /* Ensure content is above overlay */
-  max-width: 800px; /* Limit the width for better readability */
+  z-index: 2; 
+  max-width: 800px; 
   padding: 20px;
 }
 
 /* Headings and Paragraphs */
 .hero-heading {
-  font-size: 4rem; /* Increased font size for impact */
+  font-size: 4rem; 
   margin-bottom: 20px;
   font-family: 'Orbitron', sans-serif;
-  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8); /* Strong text shadow for depth */
-  animation: fadeIn 1s ease-in; /* Fade-in effect */
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8); 
+  animation: fadeIn 1s ease-in; 
 }
 
 .hero-paragraph {
